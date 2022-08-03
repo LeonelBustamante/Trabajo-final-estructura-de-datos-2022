@@ -6,7 +6,7 @@ Acceso al enunciado del trabajo final de la materia: [Enunciado](https://github.
 #### Universidad Nacional del Comahue - Facultad de Informática
 #### Materia: Estructura de Datos
 #### Alumno: Bustamante, Alexis
-#### Estado: 👌 Esperando corrección
+#### Estado: 🛠️ Testing
 
 ## Para hacer uso de la carga de datos automática
 
