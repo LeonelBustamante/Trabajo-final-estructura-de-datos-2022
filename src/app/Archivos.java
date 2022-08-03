@@ -1,14 +1,35 @@
 package app;
 
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.StringTokenizer;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
+
 import tools.*;
 
 class Archivos {
     // PARA CARGA AUTOMATICA SE DEBE CAMBIAR LA SIGUIENTE LINEA
-    private static String path = "C:\\Users\\User\\Documents\\Leo\\TRABAJO-FINAL-DE-ESTRUCTURA-DE-DATOS\\src\\util\\Archivos\\Resultados.txt";
+    private static String path = "D:\\Documentos\\Leo\\Trabajo-final-estructura-de-datos-2022\\src\\util\\Archivos\\log.txt";
 
     private static int nroLinea = 1;
+
+    // Metodo para mostrar imagen en una ventana externa
+    public static void mostrarImagen() throws IOException {
+        File file = new File(
+                "D:\\Documentos\\Leo\\Trabajo-final-estructura-de-datos-2022\\src\\util\\Imagenes\\Grafo con nodos y arcos etiquetados.png");
+        BufferedImage bufferedImage = ImageIO.read(file);
+
+        ImageIcon imageIcon = new ImageIcon(bufferedImage);
+        JFrame jFrame = new JFrame();
+        jFrame.setSize(500, 500);
+        JLabel jLabel = new JLabel();
+        jLabel.setIcon(imageIcon);
+        jFrame.add(jLabel);
+        jFrame.setVisible(true);
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
 
     public static void limpiarTXT() {
         try {

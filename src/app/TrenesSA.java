@@ -1,12 +1,14 @@
 package app;
 
+import java.io.IOException;
+
 import tools.*;
 import util.TecladoIn;
 
 public class TrenesSA {
 
     // PARA CARGA AUTOMATICA SE DEBE CAMBIAR LA SIGUIENTE LINEA
-    private static String path = "C:\\Users\\User\\Documents\\Leo\\TRABAJO-FINAL-DE-ESTRUCTURA-DE-DATOS\\src\\util\\Archivos\\cargaDeDatos.txt";
+    private static String path = "D:\\Documentos\\Leo\\Trabajo-final-estructura-de-datos-2022\\src\\util\\Archivos\\cargaDeDatos.txt";
 
     public static void main(String[] args) {
         Archivos.limpiarTXT();
@@ -160,8 +162,9 @@ public class TrenesSA {
         int opcion;
         do {
             System.out.println("----------------------------------------------------");
-            System.out.println("ABM TRENES");
-            // System.out.println(trenes);
+            System.out.println("| ABM TRENES                                       |");
+            System.out.println("----------------------------------------------------");
+            System.out.println(trenes);
             opcion = menuABM();
             if (trenes.esVacio() && (opcion == 2 || opcion == 3)) {
                 System.out.println("No hay trenes para modificar o eliminar");
@@ -189,6 +192,8 @@ public class TrenesSA {
     private static void modificarTren(Tren tren, MapeoAMuchos lineas) {
         int opcion;
         do {
+            System.out.println("----------------------------------------------------");
+            System.out.println("| MODIFICAR TREN                                   |");
             System.out.println("----------------------------------------------------");
             System.out.println("Tren actualmente:\t " + tren);
             System.out.println("1. Cambiar combustible");
@@ -391,8 +396,10 @@ public class TrenesSA {
     private static void abmEstaciones(DiccionarioAVL estaciones, Grafo mapa) {
         int opcion;
         do {
-            System.out.println("-----ABM ESTACIONES-----");
-            // System.out.println(estaciones);
+            System.out.println("----------------------------------------------------");
+            System.out.println("| ABM ESTACIONES                                   |");
+            System.out.println("----------------------------------------------------");
+            System.out.println(estaciones);
             opcion = menuABM();
             if (estaciones.esVacio() && (opcion == 2 || opcion == 3)) {
                 System.out.println("No se puede agregar o eliminar estaciones, no hay estaciones cargadas");
@@ -431,6 +438,8 @@ public class TrenesSA {
     private static void modificarEstacion(Estacion estacion) {
         int opcion;
         do {
+            System.out.println("----------------------------------------------------");
+            System.out.println("| MODIFICAR ESTACION                               |");
             System.out.println("----------------------------------------------------");
             System.out.println("Estación actualmente:\t" + estacion);
             System.out.println("1. Modificar cantidad de vias");
@@ -496,7 +505,9 @@ public class TrenesSA {
         if (!estaciones.esVacio()) {
             int opcion;
             do {
-                System.out.println("-----ABM LINEAS-----");
+                System.out.println("----------------------------------------------------");
+                System.out.println("| ABM LINEAS                                       |");
+                System.out.println("----------------------------------------------------");
                 // System.out.println(lineas);
                 opcion = menuABM();
                 if (lineas.esVacio() && (opcion == 2 || opcion == 3)) {
@@ -540,6 +551,8 @@ public class TrenesSA {
         int opcion;
         do {
             System.out.println("----------------------------------------------------");
+            System.out.println("| MODIFICAR LINEA                                  |");
+            System.out.println("----------------------------------------------------");
             System.out.println("Lineas actuales:\t" + lineas.obtenerConjuntoDominio());
             System.out.println("1. Agregar estaciones a la linea");
             System.out.println("2. Eliminar estaciones de la linea");
@@ -571,8 +584,10 @@ public class TrenesSA {
         if (!estaciones.esVacio()) {
             int opcion;
             do {
-                System.out.println("-----ABM VIAS-----");
-                // System.out.println(estaciones);
+                System.out.println("----------------------------------------------------");
+                System.out.println("| ABM VIAS                                         |");
+                System.out.println("----------------------------------------------------");
+                System.out.println(mapa);
                 opcion = menuABM();
                 if (estaciones.esVacio() && (opcion == 2 || opcion == 3)) {
                     System.out.println("No se puede agregar o eliminar lineas, no hay estaciones cargadas");
@@ -650,7 +665,9 @@ public class TrenesSA {
         if (!trenes.esVacio()) {
             int opcion;
             do {
-                System.out.println("----------Consultas de Trenes----------");
+                System.out.println("----------------------------------------------------");
+                System.out.println("| CONSULTAS TRENES                                 |");
+                System.out.println("----------------------------------------------------");
                 System.out.println("1. Consultar informacion de un tren");
                 System.out.println("2. Consultar linea, y estaciones de un tren");
                 System.out.println("3. Volver");
@@ -683,7 +700,9 @@ public class TrenesSA {
         if (!estaciones.esVacio()) {
             int opcion;
             do {
-                System.out.println("----------Consultas de Estaciones----------");
+                System.out.println("----------------------------------------------------");
+                System.out.println("| CONSULTAS ESTACIONES                             |");
+                System.out.println("----------------------------------------------------");
                 System.out.println("1. Consultar informacion de una estacion");
                 System.out.println("2. Consultar destinos de una estacion");
                 System.out.println("3. Volver");
@@ -708,7 +727,9 @@ public class TrenesSA {
         if (!estaciones.esVacio()) {
             int opcion;
             do {
-                System.out.println("----------Consultas de Viajes----------");
+                System.out.println("----------------------------------------------------");
+                System.out.println("| CONSULTAS VIAJES                                 |");
+                System.out.println("----------------------------------------------------");
                 System.out.println("1. Consultar recorrido con menos kilometros");
                 System.out.println("2. Consultar recorrido que pase por menos estaciones");
                 System.out.println("3. Volver");
@@ -748,7 +769,9 @@ public class TrenesSA {
             MapeoAMuchos lineas) {
         int opcion;
         do {
-            System.out.println("----------Mostrar Todos los Datos----------");
+            System.out.println("----------------------------------------------------");
+            System.out.println("| MOSTRAR DATOS                                    |");
+            System.out.println("----------------------------------------------------");
             System.out.println("1. Mostrar Mapa");
             System.out.println("2. Mostrar Todos los Trenes");
             System.out.println("3. Mostrar Todas las Estaciones");
@@ -759,7 +782,14 @@ public class TrenesSA {
             System.out.print("Ingrese una opcion: ");
             opcion = TecladoIn.readLineInt();
             switch (opcion) {
-                case 1 -> System.out.println(mapa);
+                case 1 -> {
+                    System.out.println(mapa);
+                    try {
+                        Archivos.mostrarImagen();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
                 case 2 -> System.out.println(trenes);
                 case 3 -> System.out.println(estaciones);
                 case 4 -> System.out.println(lineas);
