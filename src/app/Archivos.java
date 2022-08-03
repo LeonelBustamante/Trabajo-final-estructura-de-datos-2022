@@ -4,13 +4,10 @@ import java.io.*;
 import java.util.StringTokenizer;
 import tools.*;
 
-/**
- * @author Alexis Leonel Bustamante Hecht
- * @legajo FAI-2355
- * @materia Estructura de datos
- */
 class Archivos {
+    // PARA CARGA AUTOMATICA SE DEBE CAMBIAR LA SIGUIENTE LINEA
     private static String path = "C:\\Users\\User\\Documents\\Leo\\TRABAJO-FINAL-DE-ESTRUCTURA-DE-DATOS\\src\\util\\Archivos\\Resultados.txt";
+
     private static int nroLinea = 1;
 
     public static void limpiarTXT() {

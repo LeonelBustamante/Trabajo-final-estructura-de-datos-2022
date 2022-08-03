@@ -5,6 +5,9 @@ import util.TecladoIn;
 
 public class TrenesSA {
 
+    // PARA CARGA AUTOMATICA SE DEBE CAMBIAR LA SIGUIENTE LINEA
+    private static String path = "C:\\Users\\User\\Documents\\Leo\\TRABAJO-FINAL-DE-ESTRUCTURA-DE-DATOS\\src\\util\\Archivos\\cargaDeDatos.txt";
+
     public static void main(String[] args) {
         Archivos.limpiarTXT();
         menuPrincipal();
@@ -34,9 +37,7 @@ public class TrenesSA {
             System.out.print("Ingrese una opcion: ");
             opcion = TecladoIn.readLineInt();
             switch (opcion) {
-                case 1 -> Archivos.leer(
-                        "C:\\Users\\User\\Documents\\Leo\\TRABAJO-FINAL-DE-ESTRUCTURA-DE-DATOS\\src\\util\\Archivos\\cargaDeDatos.txt",
-                        mapa, estaciones, trenes, lineas);
+                case 1 -> Archivos.leer(path, mapa, estaciones, trenes, lineas);
                 case 2 -> abmTrenes(trenes, lineas);
                 case 3 -> abmEstaciones(estaciones, mapa);
                 case 4 -> abmLineas(lineas, estaciones);
