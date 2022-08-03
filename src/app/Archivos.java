@@ -10,7 +10,7 @@ import tools.*;
  * @materia Estructura de datos
  */
 class Archivos {
-    private static String path = "C:\\Users\\User\\Documents\\Leo\\TRABAJO-FINAL-DE-ESTRUCTURA-DE-DATOS\\src\\util\\log.txt";
+    private static String path = "C:\\Users\\User\\Documents\\Leo\\TRABAJO-FINAL-DE-ESTRUCTURA-DE-DATOS\\src\\util\\Archivos\\Resultados.txt";
     private static int nroLinea = 1;
 
     public static void limpiarTXT() {

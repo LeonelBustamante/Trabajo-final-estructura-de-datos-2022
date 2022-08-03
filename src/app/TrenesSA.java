@@ -35,7 +35,7 @@ public class TrenesSA {
             opcion = TecladoIn.readLineInt();
             switch (opcion) {
                 case 1 -> Archivos.leer(
-                        "C:\\Users\\User\\Documents\\Leo\\TRABAJO-FINAL-DE-ESTRUCTURA-DE-DATOS\\cargaDeDatos.txt",
+                        "C:\\Users\\User\\Documents\\Leo\\TRABAJO-FINAL-DE-ESTRUCTURA-DE-DATOS\\src\\util\\Archivos\\cargaDeDatos.txt",
                         mapa, estaciones, trenes, lineas);
                 case 2 -> abmTrenes(trenes, lineas);
                 case 3 -> abmEstaciones(estaciones, mapa);
