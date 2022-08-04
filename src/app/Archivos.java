@@ -108,6 +108,8 @@ class Archivos {
                 } else {
                     Archivos.escribirLog("⛔ Error al agregar la estacion " + nombre + " al mapa");
                 }
+                System.out.println(estacion);
+                System.out.println(estaciones);
             }
             case "L" -> {
                 Linea lineaNueva = new Linea(tokens.nextToken());
