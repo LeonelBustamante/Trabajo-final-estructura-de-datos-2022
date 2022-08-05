@@ -20,7 +20,9 @@ private static String path = "AQUI SE DEBE COLOCAR DIRECCION DE RESULTADOS";
 Ubicación predeterminada de resultados: [Util](https://github.com/LeonelBustamante/Trabajo-final-estructura-de-datos-2022/blob/main/src/util/Archivos/log.txt)
 ``` 
 public class TrenesSA {
-private static String path = "AQUI SE DEBE COLOCAR DIRECCION DE CARGA DE DATOS";
+    private static String cargaDatos = "cargaDeDatos.txt";
+    private static String mapaConNodos = "Grafo con nodos.png";
+    private static String mapaConNodosYArcos = "Grafo con nodos y arcos etiquetados.png";
 ...
 ```
 Ubicación predeterminada de resultados: [Util](https://github.com/LeonelBustamante/Trabajo-final-estructura-de-datos-2022/blob/main/src/util/Archivos/cargaDeDatos.txt)

@@ -8,7 +8,9 @@ import util.TecladoIn;
 public class TrenesSA {
 
     // PARA CARGA AUTOMATICA SE DEBE CAMBIAR LA SIGUIENTE LINEA
-    private static String path = "D:\\Documentos\\Leo\\Trabajo-final-estructura-de-datos-2022\\src\\util\\Archivos\\cargaDeDatos.txt";
+    private static String cargaDatos = "D:\\Documentos\\Leo\\Trabajo-final-estructura-de-datos-2022\\src\\util\\Archivos\\cargaDeDatos.txt";
+    private static String mapaConNodos = "D:\\Documentos\\Leo\\Trabajo-final-estructura-de-datos-2022\\src\\util\\Imagenes\\Grafo con nodos.png";
+    private static String mapaConNodosYArcos = "D:\\Documentos\\Leo\\Trabajo-final-estructura-de-datos-2022\\src\\util\\Imagenes\\Grafo con nodos y arcos etiquetados.png";
 
     public static void main(String[] args) {
         Archivos.limpiarTXT();
@@ -39,7 +41,7 @@ public class TrenesSA {
             System.out.print("Ingrese una opcion: ");
             opcion = TecladoIn.readLineInt();
             switch (opcion) {
-                case 1 -> Archivos.leer(path, mapa, estaciones, trenes, lineas);
+                case 1 -> Archivos.leer(cargaDatos, mapa, estaciones, trenes, lineas);
                 case 2 -> abmTrenes(trenes, lineas);
                 case 3 -> abmEstaciones(estaciones, mapa);
                 case 4 -> abmLineas(lineas, estaciones);
@@ -276,7 +278,7 @@ public class TrenesSA {
         boolean seguir;
         do {
             System.out.print("Ingrese el nombre de la estacion: ");
-            nombre = TecladoIn.readLine();
+            nombre = TecladoIn.readLine().toUpperCase();
             seguir = estaciones.existeClave(nombre);
             if (!seguir) {
                 System.out.println("!!!ERROR: Estacion no encontrada");
@@ -485,13 +487,13 @@ public class TrenesSA {
     private static void eliminarEstacion(DiccionarioAVL estaciones, Grafo mapa) {
         String nombre = pedirNombreEstacion();
         if (estaciones.existeClave(nombre)) {
+            Estacion estacion = (Estacion) estaciones.obtenerDato(nombre);
             if (estaciones.eliminar(nombre)) {
                 Archivos.escribirLog("✅ Estacion " + nombre + " eliminada de las estaciones");
             } else {
                 Archivos.escribirLog("⛔ Error al eliminar la estacion " + nombre + " de las estaciones");
             }
-            Estacion estacion = (Estacion) estaciones.obtenerDato(nombre);
-            if (mapa.insertarVertice(estacion)) {
+            if (mapa.eliminarVertice(estacion)) {
                 Archivos.escribirLog("✅ Estacion " + nombre + " eliminada del mapa");
             } else {
                 Archivos.escribirLog("⛔ Error al eliminar la estacion " + nombre + " del mapa");
@@ -508,7 +510,7 @@ public class TrenesSA {
                 System.out.println("----------------------------------------------------");
                 System.out.println("| ABM LINEAS                                       |");
                 System.out.println("----------------------------------------------------");
-                // System.out.println(lineas);
+                System.out.println(lineas);
                 opcion = menuABM();
                 if (lineas.esVacio() && (opcion == 2 || opcion == 3)) {
                     System.out.println("No se puede agregar o eliminar lineas, no hay lineas cargadas");
@@ -573,8 +575,12 @@ public class TrenesSA {
         Linea linea = pedirLinea(lineas);
         if (lineas.obtenerConjuntoDominio().localizar(linea) > 0) {
             Estacion estacion = buscarEstacionPorNombre(estaciones);
-            lineas.desasociar(linea, estacion);
-            Archivos.escribirLog("✅ Estacion " + estacion.getNOMBRE() + " eliminada de la linea " + linea);
+            if (lineas.desasociar(linea, estacion)) {
+                Archivos.escribirLog("✅ Se elimino la estacion " + estacion.getNOMBRE() + " de la linea " + linea);
+            } else {
+                Archivos.escribirLog(
+                        "⛔ Error al eliminar la estacion " + estacion.getNOMBRE() + " de la linea " + linea);
+            }
         } else {
             Archivos.escribirLog("⛔ No existe la linea");
         }
@@ -612,23 +618,28 @@ public class TrenesSA {
             Estacion estacionA = buscarEstacionPorNombre(estaciones);
             Estacion estacionB = buscarEstacionPorNombre(estaciones);
             if (estacionA.getNOMBRE().equals(estacionB.getNOMBRE())) {
+                Archivos.escribirLog("⛔ No se puede eliminar una via a si misma");
                 System.out.println("!!!ERROR: No existen vias entre la misma estacion");
             } else {
                 if (mapa.existeArco(estacionA, estacionB)) {
                     if (mapa.eliminarArco(estacionA, estacionB)) {
-                        System.out.println("Via eliminada");
+                        System.out.println("✅ Via eliminada");
                         Archivos.escribirLog(
-                                "Se elimino la via entre " + estacionA.getNOMBRE() + " y " + estacionB.getNOMBRE());
+                                "✅ Via eliminada entre " + estacionA.getNOMBRE() + " y " + estacionB.getNOMBRE());
                     } else {
+                        Archivos.escribirLog("⛔ Error al eliminar la via entre " + estacionA.getNOMBRE() + " y "
+                                + estacionB.getNOMBRE());
                         System.out.println("!!!ERROR: No se pudo eliminar la via");
                     }
                 } else {
+                    Archivos.escribirLog(
+                            "⛔ No existe una via entre " + estacionA.getNOMBRE() + " y " + estacionB.getNOMBRE());
                     System.out.println("!!!ERROR: No existe via entre las estaciones");
                 }
             }
         } else {
             System.out.println("!!!ERROR: No hay estaciones cargadas");
-            Archivos.escribirLog("!!!ERROR: No hay estaciones cargadas");
+            Archivos.escribirLog("⛔ No hay estaciones cargadas");
         }
     }
 
@@ -785,7 +796,7 @@ public class TrenesSA {
                 case 1 -> {
                     System.out.println(mapa);
                     try {
-                        Archivos.mostrarImagen();
+                        Archivos.mostrarImagen(mapaConNodos);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -793,7 +804,14 @@ public class TrenesSA {
                 case 2 -> System.out.println(trenes);
                 case 3 -> System.out.println(estaciones);
                 case 4 -> System.out.println(lineas);
-                case 5 -> System.out.println(mapa);
+                case 5 -> {
+                    System.out.println(mapa);
+                    try {
+                        Archivos.mostrarImagen(mapaConNodosYArcos);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
                 case 6 -> System.out.println("Volviendo");
                 default -> System.out.println("Opcion incorrecta");
             }

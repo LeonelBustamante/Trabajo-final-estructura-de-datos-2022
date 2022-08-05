@@ -15,33 +15,34 @@ public class MapeoAMuchos {
     }
 
     public boolean asociar(Object dom, Object rango) {
-
-        boolean exito = true;
+        boolean exito = false;
         int pos = Math.abs(dom.hashCode() % this.TAMANIO);
         NodoHashMapeoM nodo = this.tabla[pos];
-        if (exito && this.tabla[pos] == null) {
+        if (!exito && this.tabla[pos] == null) {
             this.tabla[pos] = new NodoHashMapeoM(dom, rango);
             this.cant++;
+            exito = true;
         } else {
             if (nodo.getDominio().equals(dom)) {
                 if (nodo.getRango().localizar(rango) < 0) {
                     nodo.agregarElemento(rango);
+                    exito = true;
                 }
             } else {
-                // si no es igual, se recorre el arreglo hasta encontrar una posicion
-                while (exito && nodo.getEnlace() != null) {
-                    nodo = nodo.getEnlace();
+                while (!exito && nodo.getEnlace() != null) {
                     if (nodo.getDominio().equals(dom)) {
                         if (nodo.getRango().localizar(rango) < 0) {
                             nodo.agregarElemento(rango);
+                            exito = true;
                         }
-                        exito = false;
                     }
+                    nodo = nodo.getEnlace();
                 }
-                if (exito) {
+                if (!exito && nodo.getEnlace() == null) {
                     // si no se encontro una posicion vacia, se crea un nuevo nodo
                     nodo.setEnlace(new NodoHashMapeoM(dom, rango));
                     this.cant++;
+                    exito = true;
                 }
             }
         }
@@ -221,13 +222,12 @@ public class MapeoAMuchos {
             texto = "";
             for (int i = 0; i < this.TAMANIO; i++) {
                 if (this.tabla[i] != null) {
-                    texto += "HASH POS " + i + " : " + this.tabla[i].getDominio() + " [" + this.tabla[i].getRango()
-                            + "]\n";
+                    texto += "HASH POS " + i + " : " + this.tabla[i].getDominio() + "\n" + this.tabla[i].getRango();
                     int j = 1;
                     NodoHashMapeoM aux = this.tabla[i];
                     while (aux.getEnlace() != null) {
                         aux = aux.getEnlace();
-                        texto += "HASH POS " + i + "-" + j + " : " + aux.getDominio() + " [" + aux.getRango() + "]\n";
+                        texto += "HASH POS " + i + "-" + j + " : " + aux.getDominio() + "\n" + aux.getRango();
                         j++;
                     }
                 }

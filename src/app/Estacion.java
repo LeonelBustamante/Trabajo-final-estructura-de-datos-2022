@@ -63,4 +63,9 @@ public class Estacion {
     public int hashCode() {
         return NOMBRE.hashCode();
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return NOMBRE.equals(((Estacion) obj).NOMBRE);
+    }
 }

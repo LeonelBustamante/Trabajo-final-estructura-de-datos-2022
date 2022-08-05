@@ -31,7 +31,6 @@ public class Grafo {
     }
 
     public boolean eliminarVertice(Object vertice) {
-        // ELIMINA VERTICE Y TODOS SUS ARCOS
 
         boolean exito = false;
         if (!this.esVacio()) {
@@ -93,6 +92,7 @@ public class Grafo {
         boolean exito = false;
         NodoVert origen = ubicarVertice(verticeO);
         NodoVert destino = ubicarVertice(verticeD);
+
         if (origen != null && destino != null) {
             exito = eliminar(origen, destino);
             eliminar(destino, origen);
@@ -111,8 +111,12 @@ public class Grafo {
     private boolean eliminar(NodoVert nodoO, NodoVert nodoD) {
         boolean exito = false;
         NodoAdy aux = nodoO.getPrimerAdy();
+        System.out.println("nodoO: " + nodoO.getElem());
+        System.out.println("nodoD: " + nodoD.getElem());
+        System.out.println("aux: " + aux.getVertice().getElem());
+
         if (aux != null) {
-            if (aux.getVertice().equals(nodoD)) {
+            if (aux.getVertice().getElem().equals(nodoD.getElem())) {
                 nodoO.setPrimerAdy(nodoO.getPrimerAdy().getSigAdyacente());
             } else {
                 while (!exito && aux != null) {
@@ -505,7 +509,8 @@ public class Grafo {
                 adyActual = actual.getPrimerAdy();
                 while (adyActual != null) {
                     if (caminoActual.localizar(adyActual.getVertice().getElem()) < 0) {
-                        caminoMinimo = encuentraCaminoMasCorto(adyActual.getVertice(), caminoActual, caminoMinimo,destino);
+                        caminoMinimo = encuentraCaminoMasCorto(adyActual.getVertice(), caminoActual, caminoMinimo,
+                                destino);
                         caminoActual.eliminar(caminoActual.longitud());
                     }
                     adyActual = adyActual.getSigAdyacente();
@@ -526,13 +531,15 @@ public class Grafo {
         return caminoMenosPeso;
     }
 
-    private Lista minimoPesoParaPasarAux(NodoVert nodoActual, NodoVert nodoDestino, int pesoActual, Lista lista,Lista menosPesado) {
+    private Lista minimoPesoParaPasarAux(NodoVert nodoActual, NodoVert nodoDestino, int pesoActual, Lista lista,
+            Lista menosPesado) {
         if (nodoActual != null) {
             lista.insertar(nodoActual.getElem(), lista.longitud() + 1);
             if (nodoActual.equals(nodoDestino)) {
-                lista.insertar(pesoActual, lista.longitud() + 1); 
-                if (menosPesado.esVacia() || (int) lista.recuperar(lista.longitud()) < (int) menosPesado.recuperar(menosPesado.longitud())) {
-                    menosPesado = lista.clone();  
+                lista.insertar(pesoActual, lista.longitud() + 1);
+                if (menosPesado.esVacia() || (int) lista.recuperar(lista.longitud()) < (int) menosPesado
+                        .recuperar(menosPesado.longitud())) {
+                    menosPesado = lista.clone();
                 }
                 lista.eliminar(lista.longitud());
             } else {
@@ -540,7 +547,8 @@ public class Grafo {
                 while (ady != null) {
                     if (lista.localizar(ady.getVertice().getElem()) < 0) {
                         pesoActual += ady.getEtiqueta();
-                        menosPesado = minimoPesoParaPasarAux(ady.getVertice(), nodoDestino, pesoActual, lista,menosPesado);
+                        menosPesado = minimoPesoParaPasarAux(ady.getVertice(), nodoDestino, pesoActual, lista,
+                                menosPesado);
                         lista.eliminar(lista.longitud());
                         pesoActual -= ady.getEtiqueta();
                     }

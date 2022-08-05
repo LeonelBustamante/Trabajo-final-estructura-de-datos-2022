@@ -16,9 +16,9 @@ class Archivos {
     private static int nroLinea = 1;
 
     // Metodo para mostrar imagen en una ventana externa
-    public static void mostrarImagen() throws IOException {
+    public static void mostrarImagen(String dir) throws IOException {
         File file = new File(
-                "D:\\Documentos\\Leo\\Trabajo-final-estructura-de-datos-2022\\src\\util\\Imagenes\\Grafo con nodos y arcos etiquetados.png");
+                dir);
         BufferedImage bufferedImage = ImageIO.read(file);
 
         ImageIcon imageIcon = new ImageIcon(bufferedImage);
@@ -108,8 +108,6 @@ class Archivos {
                 } else {
                     Archivos.escribirLog("⛔ Error al agregar la estacion " + nombre + " al mapa");
                 }
-                System.out.println(estacion);
-                System.out.println(estaciones);
             }
             case "L" -> {
                 Linea lineaNueva = new Linea(tokens.nextToken());

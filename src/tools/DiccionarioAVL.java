@@ -147,7 +147,6 @@ public class DiccionarioAVL {
 
     public boolean eliminar(Comparable key) {
         boolean exito = false;
-        NodoAVLDicc encontrado = null;
         exito = eliminarAux(this.raiz, null, key);
         return exito;
     }
@@ -242,41 +241,19 @@ public class DiccionarioAVL {
     }
 
     private void caso3(NodoAVLDicc nodo) {
-        NodoAVLDicc candidato;
-        candidato = buscarCandidato(nodo.getDerecho());
+        NodoAVLDicc candidato = buscarCandidato(nodo.getDerecho());
         nodo.setDato(candidato.getDato());
         nodo.setClave(candidato.getClave());
     }
 
     private NodoAVLDicc buscarCandidato(NodoAVLDicc nodo) {
-        int balanceo;
-        NodoAVLDicc candidato = null;
-        NodoAVLDicc padreCandidato = nodo;
-        NodoAVLDicc hijo = nodo.getIzquierdo();
-        if (hijo != null) {
-
-            if (hijo.getIzquierdo() == null) {
-                candidato = hijo;
-                if (hijo.getIzquierdo() == null && hijo.getDerecho() == null) {
-                    caso1(padreCandidato, hijo);
-
-                } else {
-                    if (hijo.getIzquierdo() != null && hijo.getDerecho() == null
-                            || hijo.getIzquierdo() == null && hijo.getDerecho() != null) {
-                        caso2(padreCandidato, hijo);
-                    }
-                }
-            } else {
-                candidato = buscarCandidato(nodo.getIzquierdo());
-                padreCandidato.recalcularAltura();
-                balanceo = verificarBalanceo(padreCandidato);
-                if (Math.abs(balanceo) > 1) {
-                    padreCandidato.setIzquierdo(balancear(hijo));
-                }
-
-            }
-
+        NodoAVLDicc candidato = nodo;
+        NodoAVLDicc padre = candidato;
+        while (candidato.getIzquierdo() != null) {
+            padre = candidato;
+            candidato = candidato.getIzquierdo();
         }
+        padre.setIzquierdo(candidato.getDerecho());
         return candidato;
     }
 
@@ -327,27 +304,17 @@ public class DiccionarioAVL {
     }
 
     private NodoAVLDicc obtenerNodo(NodoAVLDicc nodo, Comparable key) {
-        NodoAVLDicc exito = null;
-        if (nodo != null) {
-            if (key.compareTo(nodo.getClave()) == 0) { // ENCUENTRA UN ELEMENTO REPETIDO
-                exito = nodo;
-            } else if (key.compareTo(nodo.getClave()) < 0) {
-                // key es menor que nodo.getClave()
-                // si tiene HI baja a la izquierda
-                if (nodo.getIzquierdo() != null) {
-                    exito = obtenerNodo(nodo.getIzquierdo(), key);
-                }
-
-            } else {
-                // key es mayor que nodo.getClave()
-                // si tiene HD baja a la derecha
-                if (nodo.getDerecho() != null) {
-                    exito = obtenerNodo(nodo.getDerecho(), key);
-                }
-
-            }
+        NodoAVLDicc res = null;
+        if (nodo == null) {
+            res = null;
+        } else if (nodo.getClave().compareTo(key) == 0) {
+            res = nodo;
+        } else if (nodo.getClave().compareTo(key) > 0) {
+            res = obtenerNodo(nodo.getIzquierdo(), key);
+        } else {
+            res = obtenerNodo(nodo.getDerecho(), key);
         }
-        return exito;
+        return res;
     }
 
     public boolean existeClave(Comparable key) {
