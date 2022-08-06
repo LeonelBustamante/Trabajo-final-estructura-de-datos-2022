@@ -3,7 +3,6 @@ package tools;
 import java.util.Arrays;
 
 public class DiccionarioHash {
-    // HASH ABIERTO
     private int TAMANIO;
     private NodoHashDicc[] tabla;
     private int cant;

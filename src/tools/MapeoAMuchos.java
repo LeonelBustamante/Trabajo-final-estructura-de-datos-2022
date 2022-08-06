@@ -39,7 +39,6 @@ public class MapeoAMuchos {
                     nodo = nodo.getEnlace();
                 }
                 if (!exito && nodo.getEnlace() == null) {
-                    // si no se encontro una posicion vacia, se crea un nuevo nodo
                     nodo.setEnlace(new NodoHashMapeoM(dom, rango));
                     this.cant++;
                     exito = true;

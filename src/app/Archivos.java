@@ -12,13 +12,10 @@ import tools.*;
 class Archivos {
     // PARA CARGA AUTOMATICA SE DEBE CAMBIAR LA SIGUIENTE LINEA
     private static String path = "D:\\Documentos\\Leo\\Trabajo-final-estructura-de-datos-2022\\src\\util\\Archivos\\log.txt";
-
     private static int nroLinea = 1;
 
-    // Metodo para mostrar imagen en una ventana externa
     public static void mostrarImagen(String dir) throws IOException {
-        File file = new File(
-                dir);
+        File file = new File(dir);
         BufferedImage bufferedImage = ImageIO.read(file);
 
         ImageIcon imageIcon = new ImageIcon(bufferedImage);

@@ -9,8 +9,6 @@ public class Grafo {
     }
 
     public boolean insertarVertice(Object vertice) {
-        // INSERTA VERTICE EN EL GRAFO AL PRINCIPIO Y
-        // RETORNA TRUE O FALSE DE ACUERDO AL EXITO
         boolean exito = false;
         NodoVert aux = this.ubicarVertice(vertice);
         if (aux == null) {
@@ -21,8 +19,6 @@ public class Grafo {
     }
 
     private NodoVert ubicarVertice(Object elem) {
-        // BUSCA EL VERTICE EN EL GRAFO Y RETORNA EL NODO
-        // O RETORNA NULL SI NO EXISTE EL VERTICE
         NodoVert aux = this.inicio;
         while (aux != null && !aux.getElem().equals(elem)) {
             aux = aux.getSigVertice();
@@ -72,7 +68,6 @@ public class Grafo {
     }
 
     public boolean existeVertice(Object vertice) {
-        // RETORNA TRUE O FALSE DE ACUERDO AL EXITO EN LA BUSQUEDA DEL VERTICE
         return (ubicarVertice(vertice) != null);
     }
 

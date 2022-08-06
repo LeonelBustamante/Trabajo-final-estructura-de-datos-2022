@@ -137,16 +137,11 @@ public class TecladoIn {
 				number = Long.parseLong(inputString);
 				done = true;
 			} catch (NumberFormatException e) {
-				System.out.println(
-						"Your input number is not correct.");
-				System.out.println(
-						"Your input number must be");
-				System.out.println(
-						"a whole number written as an");
-				System.out.println(
-						"ordinary numeral, such as 42");
-				System.out.println("Minus signs are OK,"
-						+ "but do not use a plus sign.");
+				System.out.println("Your input number is not correct.");
+				System.out.println("Your input number must be");
+				System.out.println("a whole number written as an");
+				System.out.println("ordinary numeral, such as 42");
+				System.out.println("Minus signs are OK, but do not use a plus sign.");
 				System.out.println("Please try again.");
 				System.out.println("Enter a whole number:");
 			}

@@ -4,7 +4,6 @@ public class DiccionarioAVL {
 
     private NodoAVLDicc raiz;
 
-    // CONSTRUCTOR
     public DiccionarioAVL() {
         this.raiz = null;
     }
@@ -26,11 +25,9 @@ public class DiccionarioAVL {
         boolean exito = true;
         int balanceo;
         if (nodo != null) {
-            if (key.compareTo(nodo.getClave()) == 0) { // ENCUENTRA UN ELEMENTO REPETIDO
+            if (key.compareTo(nodo.getClave()) == 0) {
                 exito = false;
             } else if (key.compareTo(nodo.getClave()) < 0) {
-                // elem es menor que nodo.getElemento()
-                // si tiene HI baja a la izquierda, sino agrega elemento
 
                 if (nodo.getIzquierdo() != null) {
                     exito = insertarAux(nodo.getIzquierdo(), key, elem);
@@ -48,8 +45,6 @@ public class DiccionarioAVL {
                     nodo.recalcularAltura();
                 }
             } else {
-                // elem es mayor que n.getElem()
-                // si tiene HD baja a la derecha, sino agrega elemento
                 if (nodo.getDerecho() != null) {
                     exito = insertarAux(nodo.getDerecho(), key, elem);
                     nodo.recalcularAltura();
@@ -328,18 +323,14 @@ public class DiccionarioAVL {
     private boolean existeClaveAux(NodoAVLDicc nodo, Comparable key) {
         boolean exito = false;
         if (nodo != null) {
-            if (key.compareTo(nodo.getClave()) == 0) { // ENCUENTRA UN ELEMENTO REPETIDO
+            if (key.compareTo(nodo.getClave()) == 0) {
                 exito = true;
             } else if (key.compareTo(nodo.getClave()) < 0) {
-                // elem es menor que nodo.getElemento()
-                // si tiene HI baja a la izquierda
                 if (nodo.getIzquierdo() != null) {
                     exito = existeClaveAux(nodo.getIzquierdo(), key);
                 }
 
             } else {
-                // elem es mayor que n.getElem()
-                // si tiene HD baja a la derecha
                 if (nodo.getDerecho() != null) {
                     exito = existeClaveAux(nodo.getDerecho(), key);
                 }
@@ -363,26 +354,16 @@ public class DiccionarioAVL {
     }
 
     public Lista listarClaves() {
-        /*
-         * Llama a un metodo privado "ListarAux" donde se envia la raiz
-         * del arbol mas una lista creada en este modulo
-         */
         Lista lis = new Lista();
         listarClavesAux(this.raiz, lis);
         return lis;
     }
 
     private void listarClavesAux(NodoAVLDicc nodo, Lista lis) {
-        /*
-         * Metodo que recibe por parametro un nodo que es la raiz del subarbol
-         * recorrido y una lista donde se listaran los elementos del arbol en in orden
-         */
 
         if (nodo != null) {
-            // RECORRE A SUS HIJOS EN INORDEN
             listarClavesAux(nodo.getIzquierdo(), lis);
 
-            // VISITA EL ELEMENTO EN EL NODO
             lis.insertar(nodo.getClave(), lis.longitud() + 1);
 
             listarClavesAux(nodo.getDerecho(), lis);
@@ -391,26 +372,16 @@ public class DiccionarioAVL {
     }
 
     public Lista listarDatos() {
-        /*
-         * Llama a un metodo privado "ListarAux" donde se envia la raiz
-         * del arbol mas una lista creada en este modulo
-         */
         Lista lis = new Lista();
         listarDatosAux(this.raiz, lis);
         return lis;
     }
 
     private void listarDatosAux(NodoAVLDicc nodo, Lista lis) {
-        /*
-         * Metodo que recibe por parametro un nodo que es la raiz del subarbol
-         * recorrido y una lista donde se listaran los elementos del arbol en in orden
-         */
 
         if (nodo != null) {
-            // RECORRE A SUS HIJOS EN INORDEN
             listarDatosAux(nodo.getIzquierdo(), lis);
 
-            // VISITA EL ELEMENTO EN EL NODO
             lis.insertar(nodo.getDato(), lis.longitud() + 1);
 
             listarDatosAux(nodo.getDerecho(), lis);
@@ -419,10 +390,6 @@ public class DiccionarioAVL {
     }
 
     public DiccionarioAVL clone() {
-        /*
-         * Metodo que llama a metodo privado si el arbol no es vacio con elemento
-         * raiz como parametro. Si el arbol esta vacio se retorna un arbol vacio
-         */
         DiccionarioAVL copia = new DiccionarioAVL();
 
         if (!this.esVacio()) {
@@ -433,11 +400,6 @@ public class DiccionarioAVL {
     }
 
     private NodoAVLDicc clonAux(NodoAVLDicc nodo) {
-        /*
-         * Metodo privado que recibe nodo con raiz del arbol en primera instancia
-         * clona un arbol recursivamente donde se va creando un nuevo nodo que sera
-         * raiz del arbol clonado y se repite hasta las hojas del arbol original
-         */
         NodoAVLDicc nuevoNodo = new NodoAVLDicc(nodo.getClave(), nodo.getDato());
 
         if (nodo.getIzquierdo() != null) {
@@ -454,11 +416,6 @@ public class DiccionarioAVL {
     }
 
     public String toString() {
-        /*
-         * Metodo sin parametros para testeo de programa se recomienda comentar
-         * cuando no se esta testeando. En caso de ser vacio se retorna un mensaje
-         * "ARBOL VACIO" sino se llama a un metodo privado "toStringAux"
-         */
         String texto = "";
 
         if (this.esVacio()) {
@@ -471,20 +428,13 @@ public class DiccionarioAVL {
     }
 
     private String toStringAux(NodoAVLDicc nodo, String texto) {
-        /*
-         * Metodo privado que recibe un nodo siendo este la raiz en una primera
-         * instancia junto con una cadena vacia que sera la retornada
-         */
 
-        if (nodo != null) {// En caso de nodo null se retorna una cadena vacia
+        if (nodo != null) {
             if (nodo.getIzquierdo() != null && nodo.getDerecho() != null) {
-                // En caso de tener ambos hijos se imprimen
                 texto += " NODO: " + nodo.getClave().toString()
                         + " HI: " + nodo.getIzquierdo().getClave().toString() + " "
                         + " HD:  " + nodo.getDerecho().getClave().toString() + "\n";
             } else {
-                // 3 posibles casos donde no se encuentra a ambos hijos se puede tener un hijo
-                // null y el otro no o no tener ninguno
                 if (nodo.getIzquierdo() == null && nodo.getDerecho() != null) {
                     texto += " NODO: " + nodo.getClave().toString() + " HI: --" + " HD: "
                             + nodo.getDerecho().getClave().toString() + "\n";
@@ -496,7 +446,6 @@ public class DiccionarioAVL {
                             + "\n";
                 }
             }
-            // Si existieran nodos visitariamos estos hasta llegar al null
             texto = toStringAux(nodo.getIzquierdo(), texto);
             texto = toStringAux(nodo.getDerecho(), texto);
         }

@@ -11,7 +11,6 @@ public class Cola {
     }
 
     public Cola clone() {
-        // Retorna una copia de la cola.
         Cola clon = new Cola();
         if (!esVacia()) {
             clon.frente = new Nodo(this.frente.getElem(), null);
@@ -28,17 +27,14 @@ public class Cola {
     }
 
     public boolean esVacia() {
-        // Retorna true si la cola está vacía.
         return this.frente == null;
     }
 
     public Object obtenerFrente() {
-        // Retorna el elemento del frente de la cola.
         return esVacia() ? null : this.frente.getElem();
     }
 
     public boolean poner(Object nuevoElem) {
-        // Agrega un nuevo elemento al final de la cola.
         Nodo nuevo = new Nodo(nuevoElem, null);
         if (esVacia()) {
             this.frente = nuevo;
@@ -51,7 +47,6 @@ public class Cola {
     }
 
     public boolean sacar() {
-        // Elimina el elemento del frente de la cola.
         boolean exito = false;
         if (!esVacia()) {
             this.frente = this.frente.getEnlace();
@@ -65,7 +60,6 @@ public class Cola {
 
     @Override
     public String toString() {
-        // Retorna una representación en string de la cola.
         String cadena = "ESTRUCTURA VACIA";
         if (!esVacia()) {
             cadena = "COLA DINAMICA: (Frente)-> [ ";
@@ -80,7 +74,6 @@ public class Cola {
     }
 
     public void vaciar() {
-        // Vacía la cola.
         this.frente = null;
         this.fin = null;
     }
