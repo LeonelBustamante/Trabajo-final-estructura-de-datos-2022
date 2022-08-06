@@ -1,0 +1,223 @@
+1-		✅ Estacion VACIO agregada a las estaciones
+2-		✅ Estacion VACIO agregada al mapa
+3-		✅ Estacion NEUQUEN agregada a las estaciones
+4-		✅ Estacion NEUQUEN agregada al mapa
+5-		✅ Estacion CIPOLLETTI agregada a las estaciones
+6-		✅ Estacion CIPOLLETTI agregada al mapa
+7-		✅ Estacion ROCA agregada a las estaciones
+8-		✅ Estacion ROCA agregada al mapa
+9-		✅ Estacion ALLEN agregada a las estaciones
+10-		✅ Estacion ALLEN agregada al mapa
+11-		✅ Estacion CENTENARIO agregada a las estaciones
+12-		✅ Estacion CENTENARIO agregada al mapa
+13-		✅ Estacion SENILLOSA agregada a las estaciones
+14-		✅ Estacion SENILLOSA agregada al mapa
+15-		✅ Estacion VILLA EL CHOCON agregada a las estaciones
+16-		✅ Estacion VILLA EL CHOCON agregada al mapa
+17-		✅ Estacion VILLA REGINA agregada a las estaciones
+18-		✅ Estacion VILLA REGINA agregada al mapa
+19-		✅ Estacion CHINA MUERTA agregada a las estaciones
+20-		✅ Estacion CHINA MUERTA agregada al mapa
+21-		✅ Estacion VILLA MASCARDI agregada a las estaciones
+22-		✅ Estacion VILLA MASCARDI agregada al mapa
+23-		✅ Estacion VILLA LA ANGOSTURA agregada a las estaciones
+24-		✅ Estacion VILLA LA ANGOSTURA agregada al mapa
+25-		✅ Estacion SAN MARTIN DE LOS ANDES agregada a las estaciones
+26-		✅ Estacion SAN MARTIN DE LOS ANDES agregada al mapa
+27-		✅ Estacion VILLA MANZANO agregada a las estaciones
+28-		✅ Estacion VILLA MANZANO agregada al mapa
+29-		✅ Estacion JUNIN DE LOS ANDES agregada a las estaciones
+30-		✅ Estacion JUNIN DE LOS ANDES agregada al mapa
+31-		✅ Estacion ALUMINE agregada a las estaciones
+32-		✅ Estacion ALUMINE agregada al mapa
+33-		✅ Estacion ZAPALA agregada a las estaciones
+34-		✅ Estacion ZAPALA agregada al mapa
+35-		✅ Estacion CUTRAL CO agregada a las estaciones
+36-		✅ Estacion CUTRAL CO agregada al mapa
+37-		✅ Estacion PLAZA HUINCUL agregada a las estaciones
+38-		✅ Estacion PLAZA HUINCUL agregada al mapa
+39-		✅ Estacion PRIMEROS PINOS agregada a las estaciones
+40-		✅ Estacion PRIMEROS PINOS agregada al mapa
+41-		✅ Estacion VILLA PEHUENIA agregada a las estaciones
+42-		✅ Estacion VILLA PEHUENIA agregada al mapa
+43-		✅ Estacion PICUN LEUFU agregada a las estaciones
+44-		✅ Estacion PICUN LEUFU agregada al mapa
+45-		✅ Estacion PIEDRA DEL AGUILA agregada a las estaciones
+46-		✅ Estacion PIEDRA DEL AGUILA agregada al mapa
+47-		✅ Estacion VILLA TRAFUL agregada a las estaciones
+48-		✅ Estacion VILLA TRAFUL agregada al mapa
+49-		✅ Se agrego la estacion VACIO a la linea LIBRE
+50-		⛔ ERROR: La estacion VACIO ya existe en la linea LIBRE
+51-		⛔ ERROR: La estacion VACIO ya existe en la linea LIBRE
+52-		⛔ ERROR: La estacion VACIO ya existe en la linea LIBRE
+53-		⛔ ERROR: La estacion VACIO ya existe en la linea LIBRE
+54-		✅ Se agrego la estacion VILLA MANZANO a la linea LINEA-0
+55-		✅ Se agrego la estacion CENTENARIO a la linea LINEA-0
+56-		✅ Se agrego la estacion ALLEN a la linea LINEA-0
+57-		✅ Se agrego la estacion ROCA a la linea LINEA-0
+58-		✅ Se agrego la estacion VILLA REGINA a la linea LINEA-0
+59-		✅ Se agrego la estacion VILLA REGINA a la linea LINEA-1
+60-		✅ Se agrego la estacion ROCA a la linea LINEA-1
+61-		✅ Se agrego la estacion ALLEN a la linea LINEA-1
+62-		✅ Se agrego la estacion CIPOLLETTI a la linea LINEA-1
+63-		✅ Se agrego la estacion NEUQUEN a la linea LINEA-1
+64-		✅ Se agrego la estacion NEUQUEN a la linea LINEA-2
+65-		✅ Se agrego la estacion CENTENARIO a la linea LINEA-2
+66-		✅ Se agrego la estacion SENILLOSA a la linea LINEA-2
+67-		✅ Se agrego la estacion VILLA EL CHOCON a la linea LINEA-2
+68-		✅ Se agrego la estacion PICUN LEUFU a la linea LINEA-2
+69-		✅ Se agrego la estacion NEUQUEN a la linea LINEA-3
+70-		✅ Se agrego la estacion CHINA MUERTA a la linea LINEA-3
+71-		✅ Se agrego la estacion SENILLOSA a la linea LINEA-3
+72-		✅ Se agrego la estacion CENTENARIO a la linea LINEA-3
+73-		✅ Se agrego la estacion VILLA MANZANO a la linea LINEA-3
+74-		✅ Se agrego la estacion VILLA MANZANO a la linea LINEA-4
+75-		✅ Se agrego la estacion CENTENARIO a la linea LINEA-4
+76-		✅ Se agrego la estacion SENILLOSA a la linea LINEA-4
+77-		✅ Se agrego la estacion VILLA EL CHOCON a la linea LINEA-4
+78-		✅ Se agrego la estacion PICUN LEUFU a la linea LINEA-4
+79-		✅ Se agrego la estacion SENILLOSA a la linea LINEA-5
+80-		✅ Se agrego la estacion PLAZA HUINCUL a la linea LINEA-5
+81-		✅ Se agrego la estacion CUTRAL CO a la linea LINEA-5
+82-		✅ Se agrego la estacion ZAPALA a la linea LINEA-5
+83-		✅ Se agrego la estacion PRIMEROS PINOS a la linea LINEA-5
+84-		✅ Se agrego la estacion VILLA EL CHOCON a la linea LINEA-6
+85-		✅ Se agrego la estacion PLAZA HUINCUL a la linea LINEA-6
+86-		✅ Se agrego la estacion CUTRAL CO a la linea LINEA-6
+87-		✅ Se agrego la estacion ZAPALA a la linea LINEA-6
+88-		✅ Se agrego la estacion PRIMEROS PINOS a la linea LINEA-6
+89-		✅ Se agrego la estacion VILLA EL CHOCON a la linea LINEA-7
+90-		✅ Se agrego la estacion PICUN LEUFU a la linea LINEA-7
+91-		✅ Se agrego la estacion ZAPALA a la linea LINEA-7
+92-		✅ Se agrego la estacion PRIMEROS PINOS a la linea LINEA-7
+93-		✅ Se agrego la estacion VILLA PEHUENIA a la linea LINEA-7
+94-		✅ Se agrego la estacion VILLA PEHUENIA a la linea LINEA-8
+95-		✅ Se agrego la estacion PRIMEROS PINOS a la linea LINEA-8
+96-		✅ Se agrego la estacion ALUMINE a la linea LINEA-8
+97-		✅ Se agrego la estacion JUNIN DE LOS ANDES a la linea LINEA-8
+98-		✅ Se agrego la estacion SAN MARTIN DE LOS ANDES a la linea LINEA-8
+99-		✅ Se agrego la estacion JUNIN DE LOS ANDES a la linea LINEA-9
+100-		✅ Se agrego la estacion SAN MARTIN DE LOS ANDES a la linea LINEA-9
+101-		✅ Se agrego la estacion VILLA TRAFUL a la linea LINEA-9
+102-		✅ Se agrego la estacion VILLA LA ANGOSTURA a la linea LINEA-9
+103-		✅ Se agrego la estacion VILLA MASCARDI a la linea LINEA-9
+104-		✅ Se agrego la estacion VILLA MASCARDI a la linea LINEA-10
+105-		✅ Se agrego la estacion VILLA LA ANGOSTURA a la linea LINEA-10
+106-		✅ Se agrego la estacion VILLA TRAFUL a la linea LINEA-10
+107-		✅ Se agrego la estacion PIEDRA DEL AGUILA a la linea LINEA-10
+108-		✅ Se agrego la estacion PICUN LEUFU a la linea LINEA-10
+109-		✅ Se agrego la estacion PICUN LEUFU a la linea LINEA-11
+110-		✅ Se agrego la estacion SENILLOSA a la linea LINEA-11
+111-		✅ Se agrego la estacion PLAZA HUINCUL a la linea LINEA-11
+112-		✅ Se agrego la estacion CUTRAL CO a la linea LINEA-11
+113-		✅ Se agrego la estacion ZAPALA a la linea LINEA-11
+114-		✅ Se agrego la estacion CHINA MUERTA a la linea LINEA-12
+115-		✅ Se agrego la estacion NEUQUEN a la linea LINEA-12
+116-		✅ Se agrego la estacion CIPOLLETTI a la linea LINEA-12
+117-		✅ Se agrego la estacion ALLEN a la linea LINEA-12
+118-		✅ Se agrego la estacion ROCA a la linea LINEA-12
+119-		✅ Se agrego la estacion CUTRAL CO a la linea LINEA-13
+120-		✅ Se agrego la estacion ZAPALA a la linea LINEA-13
+121-		✅ Se agrego la estacion PRIMEROS PINOS a la linea LINEA-13
+122-		✅ Se agrego la estacion ALUMINE a la linea LINEA-13
+123-		✅ Se agrego la estacion JUNIN DE LOS ANDES a la linea LINEA-13
+124-		✅ Se agrego la estacion VILLA PEHUENIA a la linea LINEA-14
+125-		✅ Se agrego la estacion PRIMEROS PINOS a la linea LINEA-14
+126-		✅ Se agrego la estacion ZAPALA a la linea LINEA-14
+127-		✅ Se agrego la estacion PICUN LEUFU a la linea LINEA-14
+128-		✅ Se agrego la estacion PIEDRA DEL AGUILA a la linea LINEA-14
+129-		✅ Se agrego la estacion PIEDRA DEL AGUILA a la linea LINEA-15
+130-		✅ Se agrego la estacion PICUN LEUFU a la linea LINEA-15
+131-		✅ Se agrego la estacion VILLA TRAFUL a la linea LINEA-15
+132-		✅ Se agrego la estacion VILLA LA ANGOSTURA a la linea LINEA-15
+133-		✅ Se agrego la estacion VILLA MASCARDI a la linea LINEA-15
+134-		✅ Se agrego la estacion ALUMINE a la linea LINEA-16
+135-		✅ Se agrego la estacion JUNIN DE LOS ANDES a la linea LINEA-16
+136-		✅ Se agrego la estacion SAN MARTIN DE LOS ANDES a la linea LINEA-16
+137-		✅ Se agrego la estacion VILLA TRAFUL a la linea LINEA-16
+138-		✅ Se agrego la estacion VILLA LA ANGOSTURA a la linea LINEA-16
+139-		✅ Se agrego la estacion ROCA a la linea LINEA-17
+140-		✅ Se agrego la estacion ALLEN a la linea LINEA-17
+141-		✅ Se agrego la estacion CENTENARIO a la linea LINEA-17
+142-		✅ Se agrego la estacion SENILLOSA a la linea LINEA-17
+143-		✅ Se agrego la estacion VILLA EL CHOCON a la linea LINEA-17
+144-		✅ Se agrego la estacion CENTENARIO a la linea LINEA-18
+145-		✅ Se agrego la estacion ALLEN a la linea LINEA-18
+146-		✅ Se agrego la estacion CIPOLLETTI a la linea LINEA-18
+147-		✅ Se agrego la estacion NEUQUEN a la linea LINEA-18
+148-		✅ Se agrego la estacion CHINA MUERTA a la linea LINEA-18
+149-		✅ Se agrego la estacion CUTRAL CO a la linea LINEA-19
+150-		✅ Se agrego la estacion ZAPALA a la linea LINEA-19
+151-		✅ Se agrego la estacion PRIMEROS PINOS a la linea LINEA-19
+152-		✅ Se agrego la estacion ALUMINE a la linea LINEA-19
+153-		✅ Se agrego la estacion VILLA PEHUENIA a la linea LINEA-19
+154-		✅ Se agrego el tren Interno_0: GNC, 5, 5, LINEA-5
+155-		✅ Se agrego el tren Interno_1: ELECTRICIDAD, 4, 1, LINEA-2
+156-		✅ Se agrego el tren Interno_2: NAFTA, 3, 2, LINEA-15
+157-		✅ Se agrego el tren Interno_3: DIESEL, 1, 1, LINEA-11
+158-		✅ Se agrego el tren Interno_4: ELECTRICIDAD, 3, 4, LINEA-0
+159-		✅ Se agrego el tren Interno_5: NAFTA, 5, 5, LINEA-17
+160-		✅ Se agrego el tren Interno_6: GNC, 4, 5, LINEA-17
+161-		✅ Se agrego el tren Interno_7: NAFTA, 1, 3, LINEA-13
+162-		✅ Se agrego el tren Interno_8: NAFTA, 4, 3, LINEA-12
+163-		✅ Se agrego el tren Interno_9: ELECTRICIDAD, 1, 3, LINEA-6
+164-		✅ Se agrego el tren Interno_10: DIESEL, 2, 1, LINEA-16
+165-		✅ Se agrego el tren Interno_11: ELECTRICIDAD, 2, 1, LINEA-17
+166-		✅ Se agrego el tren Interno_12: NAFTA, 2, 1, LINEA-6
+167-		✅ Se agrego el tren Interno_13: NAFTA, 3, 1, LINEA-19
+168-		✅ Se agrego el tren Interno_14: NAFTA, 0, 1, LINEA-12
+169-		✅ Se agrego el tren Interno_15: ELECTRICIDAD, 3, 2, LINEA-16
+170-		✅ Se agrego el tren Interno_16: NAFTA, 3, 0, LINEA-2
+171-		✅ Se agrego el tren Interno_17: GNC, 1, 0, LINEA-7
+172-		✅ Se agrego el tren Interno_18: DIESEL, 2, 4, LINEA-5
+173-		✅ Se agrego el tren Interno_19: GNC, 0, 5, LINEA-9
+174-		✅ Se agrego el tren Interno_20: GNC, 5, 0, LINEA-6
+175-		✅ Se agrego el tren Interno_21: ELECTRICIDAD, 4, 4, LINEA-14
+176-		✅ Se agrego el tren Interno_22: DIESEL, 1, 4, LINEA-0
+177-		✅ Se agrego el tren Interno_23: NAFTA, 3, 3, LINEA-2
+178-		✅ Se agrego el tren Interno_24: GNC, 1, 1, LINEA-3
+179-		✅ Se agrego el tren Interno_25: GNC, 3, 4, LINEA-13
+180-		✅ Se agrego el tren Interno_26: NAFTA, 3, 2, LINEA-16
+181-		✅ Se agrego el tren Interno_27: DIESEL, 5, 2, LINEA-9
+182-		✅ Se agrego el tren Interno_28: DIESEL, 4, 1, LINEA-5
+183-		✅ Se agrego el tren Interno_29: GNC, 3, 3, LINEA-6
+184-		✅ Se agrego el tren Interno_30: NAFTA, 0, 2, LINEA-2
+185-		✅ Se agrego el tren Interno_31: DIESEL, 1, 3, LINEA-1
+186-		✅ Se agrego el tren Interno_32: NAFTA, 3, 1, LINEA-13
+187-		✅ Se agrego el tren Interno_33: GNC, 2, 3, LINEA-19
+188-		✅ Se agrego el tren Interno_34: ELECTRICIDAD, 3, 3, LINEA-2
+189-		✅ Se agrego el tren Interno_35: DIESEL, 5, 3, LINEA-16
+190-		✅ Se agrego el tren Interno_36: DIESEL, 2, 2, LINEA-13
+191-		✅ Se agrego el tren Interno_37: GNC, 5, 2, LINEA-6
+192-		✅ Se agrego el tren Interno_38: DIESEL, 1, 4, LINEA-0
+193-		✅ Se agrego el tren Interno_39: DIESEL, 4, 4, LINEA-6
+194-		✅ Se agrego el arco VILLA LA ANGOSTURA-VILLA MASCARDI con distancia 66
+195-		✅ Se agrego el arco VILLA LA ANGOSTURA-VILLA TRAFUL con distancia 24
+196-		✅ Se agrego el arco VILLA TRAFUL-SAN MARTIN DE LOS ANDES con distancia 55
+197-		✅ Se agrego el arco VILLA TRAFUL-PIEDRA DEL AGUILA con distancia 130
+198-		✅ Se agrego el arco SAN MARTIN DE LOS ANDES-JUNIN DE LOS ANDES con distancia 33
+199-		✅ Se agrego el arco JUNIN DE LOS ANDES-PIEDRA DEL AGUILA con distancia 85
+200-		✅ Se agrego el arco JUNIN DE LOS ANDES-ALUMINE con distancia 80
+201-		✅ Se agrego el arco ALUMINE-VILLA PEHUENIA con distancia 46
+202-		✅ Se agrego el arco ALUMINE-PRIMEROS PINOS con distancia 50
+203-		✅ Se agrego el arco PRIMEROS PINOS-VILLA PEHUENIA con distancia 53
+204-		✅ Se agrego el arco PRIMEROS PINOS-ZAPALA con distancia 44
+205-		✅ Se agrego el arco ZAPALA-PICUN LEUFU con distancia 95
+206-		✅ Se agrego el arco PIEDRA DEL AGUILA-PICUN LEUFU con distancia 89
+207-		✅ Se agrego el arco PICUN LEUFU-VILLA EL CHOCON con distancia 52
+208-		✅ Se agrego el arco VILLA EL CHOCON-PLAZA HUINCUL con distancia 52
+209-		✅ Se agrego el arco PLAZA HUINCUL-CUTRAL CO con distancia 2
+210-		✅ Se agrego el arco CUTRAL CO-ZAPALA con distancia 72
+211-		✅ Se agrego el arco PLAZA HUINCUL-SENILLOSA con distancia 68
+212-		✅ Se agrego el arco SENILLOSA-VILLA EL CHOCON con distancia 41
+213-		✅ Se agrego el arco SENILLOSA-CENTENARIO con distancia 32
+214-		✅ Se agrego el arco CENTENARIO-VILLA MANZANO con distancia 18
+215-		✅ Se agrego el arco SENILLOSA-CHINA MUERTA con distancia 10
+216-		✅ Se agrego el arco CHINA MUERTA-NEUQUEN con distancia 22
+217-		✅ Se agrego el arco NEUQUEN-CENTENARIO con distancia 15
+218-		✅ Se agrego el arco CENTENARIO-ALLEN con distancia 33
+219-		✅ Se agrego el arco ALLEN-CIPOLLETTI con distancia 15
+220-		✅ Se agrego el arco ALLEN-ROCA con distancia 43
+221-		✅ Se agrego el arco VILLA REGINA-ROCA con distancia 44
+222-		✅ Se agrego el arco CIPOLLETTI-NEUQUEN con distancia 6
+223-		👍👍👍CARGA INICIAL DE DATOS COMPLETADA

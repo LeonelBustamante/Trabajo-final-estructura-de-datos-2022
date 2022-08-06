@@ -106,9 +106,6 @@ public class Grafo {
     private boolean eliminar(NodoVert nodoO, NodoVert nodoD) {
         boolean exito = false;
         NodoAdy aux = nodoO.getPrimerAdy();
-        System.out.println("nodoO: " + nodoO.getElem());
-        System.out.println("nodoD: " + nodoD.getElem());
-        System.out.println("aux: " + aux.getVertice().getElem());
 
         if (aux != null) {
             if (aux.getVertice().getElem().equals(nodoD.getElem())) {
