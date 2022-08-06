@@ -80,7 +80,7 @@ public class DiccionarioHash {
         nodo = this.tabla[pos];
         if (!exito && this.tabla[pos] != null) {
             if (this.tabla[pos].getClave().equals(key)) {
-                this.tabla[pos] = null;
+                this.tabla[pos] = this.tabla[pos].getEnlace();
             } else {
                 while (!exito && nodo.getEnlace() != null) {
                     if (nodo.getEnlace().getClave().equals(key)) {
@@ -176,16 +176,15 @@ public class DiccionarioHash {
             for (int i = 0; i < this.TAMANIO; i++) {
                 aux = this.tabla[i];
                 if (this.tabla[i] != null) {
-                    texto += "\nPOS " + i + ": " + aux.getClave() + " - " + aux.getDato();
+                    texto += "\nPOS " + i + ":\t\t" + aux.getClave() + " - " + aux.getDato();
                     int j = 1;
                     NodoHashDicc aux2 = aux.getEnlace();
                     while (aux2 != null) {
-                        texto += "\nPOS " + i + "-" + j + ": " + aux2.getClave() + " - " + aux2.getDato();
+                        texto += "\nPOS " + i + "-" + j + ":\t" + aux2.getClave() + " - " + aux2.getDato();
                         aux2 = aux2.getEnlace();
                         j++;
                     }
                 }
-                aux = aux.getEnlace();
             }
         }
         return texto;

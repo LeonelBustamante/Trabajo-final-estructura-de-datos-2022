@@ -221,3 +221,5 @@
 221-		✅ Se agrego el arco VILLA REGINA-ROCA con distancia 44
 222-		✅ Se agrego el arco CIPOLLETTI-NEUQUEN con distancia 6
 223-		👍👍👍CARGA INICIAL DE DATOS COMPLETADA
+224-		✅ Estacion CHINA MUERTA eliminada de las estaciones
+225-		✅ Estacion CHINA MUERTA eliminada del mapa

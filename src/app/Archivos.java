@@ -78,7 +78,7 @@ class Archivos {
 
                 Tren tren = new Tren(combustible, cantidadVagonesPasajeros, cantidadVagonesCarga, linea);
 
-                if (trenes.insertar(Tren.ultimoID(), tren)) {
+                if (trenes.insertar(tren.getId(), tren)) {
                     Archivos.escribirLog("✅ Se agrego el tren " + tren);
                 } else {
                     Archivos.escribirLog("⛔️ No se pudo agregar el tren");

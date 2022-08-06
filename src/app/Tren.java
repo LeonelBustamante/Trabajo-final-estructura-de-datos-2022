@@ -70,4 +70,9 @@ public class Tren {
         return hash;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return ((Tren) obj).id == (this.id);
+
+    }
 }
