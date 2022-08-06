@@ -19,7 +19,7 @@ public class Linea {
 
     @Override
     public boolean equals(Object obj) {
-        return obj instanceof Linea && ((Linea) obj).NOMBRE.equals(this.NOMBRE);
+        return ((Linea) obj).NOMBRE.equals(this.NOMBRE);
     }
 
     @Override

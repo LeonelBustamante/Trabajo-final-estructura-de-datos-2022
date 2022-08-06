@@ -30,15 +30,15 @@ public class MapeoAMuchos {
                 }
             } else {
                 while (!exito && nodo.getEnlace() != null) {
+                    nodo = nodo.getEnlace();
                     if (nodo.getDominio().equals(dom)) {
                         if (nodo.getRango().localizar(rango) < 0) {
                             nodo.agregarElemento(rango);
                             exito = true;
                         }
                     }
-                    nodo = nodo.getEnlace();
                 }
-                if (!exito && nodo.getEnlace() == null) {
+                if (nodo.getEnlace() == null && !exito) {
                     nodo.setEnlace(new NodoHashMapeoM(dom, rango));
                     this.cant++;
                     exito = true;

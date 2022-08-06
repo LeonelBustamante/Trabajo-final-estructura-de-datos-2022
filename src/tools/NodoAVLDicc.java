@@ -64,15 +64,22 @@ class NodoAVLDicc {
     }
 
     public void recalcularAltura() {
-        int alturaIzq = 0;
-        int alturaDer = 0;
-        if (izquierdo != null) {
-            alturaIzq = izquierdo.getAltura();
+        if (this.getIzquierdo() != null && this.getDerecho() != null) {
+            this.altura = (Math.max(this.getIzquierdo().getAltura(), this.getDerecho().getAltura()) + 1);
+        } else {
+            if (this.getIzquierdo() != null && this.getDerecho() == null) {
+                this.altura = (Math.max(this.getIzquierdo().getAltura(), -1) + 1);
+            } else {
+                if (this.getIzquierdo() == null && this.getDerecho() != null) {
+                    this.altura = (Math.max(-1, this.getDerecho().getAltura()) + 1);
+                } else {
+                    if (this.getIzquierdo() == null && this.getDerecho() == null) {
+                        this.altura = 0;
+                    }
+                }
+            }
         }
-        if (derecho != null) {
-            alturaDer = derecho.getAltura();
-        }
-        altura = Math.max(alturaIzq, alturaDer) + 1;
+
     }
 
 }
