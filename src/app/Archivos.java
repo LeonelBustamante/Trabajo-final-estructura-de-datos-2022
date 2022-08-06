@@ -3,10 +3,8 @@ package app;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.StringTokenizer;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
-
 import tools.*;
 
 class Archivos {
@@ -71,12 +69,13 @@ class Archivos {
         StringTokenizer tokens = new StringTokenizer(renglon, ";");
         switch (tokens.nextToken()) {
             case "T" -> {
+                int id = Integer.parseInt(tokens.nextToken());
                 String combustible = tokens.nextToken();
                 int cantidadVagonesPasajeros = Integer.parseInt(tokens.nextToken());
                 int cantidadVagonesCarga = Integer.parseInt(tokens.nextToken());
                 Linea linea = new Linea(tokens.nextToken());
 
-                Tren tren = new Tren(combustible, cantidadVagonesPasajeros, cantidadVagonesCarga, linea);
+                Tren tren = new Tren(id, combustible, cantidadVagonesPasajeros, cantidadVagonesCarga, linea);
 
                 if (trenes.insertar(tren.getId(), tren)) {
                     Archivos.escribirLog("✅ Se agrego el tren " + tren);

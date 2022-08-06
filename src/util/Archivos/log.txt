@@ -151,46 +151,46 @@
 151-		✅ Se agrego la estacion PRIMEROS PINOS a la linea LINEA-19
 152-		✅ Se agrego la estacion ALUMINE a la linea LINEA-19
 153-		✅ Se agrego la estacion VILLA PEHUENIA a la linea LINEA-19
-154-		✅ Se agrego el tren Interno_0: GNC, 5, 5, LINEA-5
-155-		✅ Se agrego el tren Interno_1: ELECTRICIDAD, 4, 1, LINEA-2
-156-		✅ Se agrego el tren Interno_2: NAFTA, 3, 2, LINEA-15
-157-		✅ Se agrego el tren Interno_3: DIESEL, 1, 1, LINEA-11
-158-		✅ Se agrego el tren Interno_4: ELECTRICIDAD, 3, 4, LINEA-0
-159-		✅ Se agrego el tren Interno_5: NAFTA, 5, 5, LINEA-17
-160-		✅ Se agrego el tren Interno_6: GNC, 4, 5, LINEA-17
-161-		✅ Se agrego el tren Interno_7: NAFTA, 1, 3, LINEA-13
-162-		✅ Se agrego el tren Interno_8: NAFTA, 4, 3, LINEA-12
-163-		✅ Se agrego el tren Interno_9: ELECTRICIDAD, 1, 3, LINEA-6
-164-		✅ Se agrego el tren Interno_10: DIESEL, 2, 1, LINEA-16
-165-		✅ Se agrego el tren Interno_11: ELECTRICIDAD, 2, 1, LINEA-17
-166-		✅ Se agrego el tren Interno_12: NAFTA, 2, 1, LINEA-6
-167-		✅ Se agrego el tren Interno_13: NAFTA, 3, 1, LINEA-19
-168-		✅ Se agrego el tren Interno_14: NAFTA, 0, 1, LINEA-12
-169-		✅ Se agrego el tren Interno_15: ELECTRICIDAD, 3, 2, LINEA-16
-170-		✅ Se agrego el tren Interno_16: NAFTA, 3, 0, LINEA-2
-171-		✅ Se agrego el tren Interno_17: GNC, 1, 0, LINEA-7
-172-		✅ Se agrego el tren Interno_18: DIESEL, 2, 4, LINEA-5
-173-		✅ Se agrego el tren Interno_19: GNC, 0, 5, LINEA-9
-174-		✅ Se agrego el tren Interno_20: GNC, 5, 0, LINEA-6
-175-		✅ Se agrego el tren Interno_21: ELECTRICIDAD, 4, 4, LINEA-14
-176-		✅ Se agrego el tren Interno_22: DIESEL, 1, 4, LINEA-0
-177-		✅ Se agrego el tren Interno_23: NAFTA, 3, 3, LINEA-2
-178-		✅ Se agrego el tren Interno_24: GNC, 1, 1, LINEA-3
-179-		✅ Se agrego el tren Interno_25: GNC, 3, 4, LINEA-13
-180-		✅ Se agrego el tren Interno_26: NAFTA, 3, 2, LINEA-16
-181-		✅ Se agrego el tren Interno_27: DIESEL, 5, 2, LINEA-9
-182-		✅ Se agrego el tren Interno_28: DIESEL, 4, 1, LINEA-5
-183-		✅ Se agrego el tren Interno_29: GNC, 3, 3, LINEA-6
-184-		✅ Se agrego el tren Interno_30: NAFTA, 0, 2, LINEA-2
-185-		✅ Se agrego el tren Interno_31: DIESEL, 1, 3, LINEA-1
-186-		✅ Se agrego el tren Interno_32: NAFTA, 3, 1, LINEA-13
-187-		✅ Se agrego el tren Interno_33: GNC, 2, 3, LINEA-19
-188-		✅ Se agrego el tren Interno_34: ELECTRICIDAD, 3, 3, LINEA-2
-189-		✅ Se agrego el tren Interno_35: DIESEL, 5, 3, LINEA-16
-190-		✅ Se agrego el tren Interno_36: DIESEL, 2, 2, LINEA-13
-191-		✅ Se agrego el tren Interno_37: GNC, 5, 2, LINEA-6
-192-		✅ Se agrego el tren Interno_38: DIESEL, 1, 4, LINEA-0
-193-		✅ Se agrego el tren Interno_39: DIESEL, 4, 4, LINEA-6
+154-		✅ Se agrego el tren Interno_0: DIESEL, 2, 2, LINEA-4
+155-		✅ Se agrego el tren Interno_1: GNC, 0, 4, LINEA-6
+156-		✅ Se agrego el tren Interno_2: NAFTA, 4, 4, LINEA-12
+157-		✅ Se agrego el tren Interno_3: NAFTA, 4, 3, LINEA-16
+158-		✅ Se agrego el tren Interno_4: DIESEL, 1, 1, LINEA-10
+159-		✅ Se agrego el tren Interno_5: GNC, 3, 2, LINEA-18
+160-		✅ Se agrego el tren Interno_6: ELECTRICIDAD, 5, 0, LINEA-17
+161-		✅ Se agrego el tren Interno_7: NAFTA, 1, 3, LINEA-16
+162-		✅ Se agrego el tren Interno_8: ELECTRICIDAD, 3, 3, LINEA-7
+163-		✅ Se agrego el tren Interno_9: GNC, 4, 5, LINEA-18
+164-		✅ Se agrego el tren Interno_10: DIESEL, 2, 1, LINEA-11
+165-		✅ Se agrego el tren Interno_11: DIESEL, 3, 5, LINEA-18
+166-		✅ Se agrego el tren Interno_12: NAFTA, 3, 1, LINEA-18
+167-		✅ Se agrego el tren Interno_13: DIESEL, 4, 2, LINEA-19
+168-		✅ Se agrego el tren Interno_14: NAFTA, 3, 4, LINEA-14
+169-		✅ Se agrego el tren Interno_15: DIESEL, 1, 1, LINEA-9
+170-		✅ Se agrego el tren Interno_16: GNC, 0, 5, LINEA-7
+171-		✅ Se agrego el tren Interno_17: GNC, 0, 3, LINEA-5
+172-		✅ Se agrego el tren Interno_18: NAFTA, 3, 3, LINEA-7
+173-		✅ Se agrego el tren Interno_19: GNC, 4, 2, LINEA-1
+174-		✅ Se agrego el tren Interno_20: ELECTRICIDAD, 5, 2, LINEA-0
+175-		✅ Se agrego el tren Interno_21: ELECTRICIDAD, 4, 3, LINEA-7
+176-		✅ Se agrego el tren Interno_22: GNC, 4, 3, LINEA-6
+177-		✅ Se agrego el tren Interno_23: DIESEL, 4, 3, LINEA-14
+178-		✅ Se agrego el tren Interno_24: GNC, 4, 0, LINEA-19
+179-		✅ Se agrego el tren Interno_25: DIESEL, 3, 1, LINEA-18
+180-		✅ Se agrego el tren Interno_26: NAFTA, 3, 2, LINEA-15
+181-		✅ Se agrego el tren Interno_27: ELECTRICIDAD, 4, 2, LINEA-18
+182-		✅ Se agrego el tren Interno_28: NAFTA, 5, 2, LINEA-13
+183-		✅ Se agrego el tren Interno_29: GNC, 1, 1, LINEA-7
+184-		✅ Se agrego el tren Interno_30: NAFTA, 4, 3, LINEA-1
+185-		✅ Se agrego el tren Interno_31: GNC, 3, 5, LINEA-17
+186-		✅ Se agrego el tren Interno_32: ELECTRICIDAD, 1, 5, LINEA-2
+187-		✅ Se agrego el tren Interno_33: GNC, 4, 2, LINEA-7
+188-		✅ Se agrego el tren Interno_34: NAFTA, 2, 3, LINEA-12
+189-		✅ Se agrego el tren Interno_35: NAFTA, 2, 0, LINEA-5
+190-		✅ Se agrego el tren Interno_36: ELECTRICIDAD, 3, 2, LINEA-16
+191-		✅ Se agrego el tren Interno_37: DIESEL, 3, 3, LINEA-4
+192-		✅ Se agrego el tren Interno_38: GNC, 1, 3, LINEA-5
+193-		✅ Se agrego el tren Interno_39: NAFTA, 3, 1, LINEA-12
 194-		✅ Se agrego el arco VILLA LA ANGOSTURA-VILLA MASCARDI con distancia 66
 195-		✅ Se agrego el arco VILLA LA ANGOSTURA-VILLA TRAFUL con distancia 24
 196-		✅ Se agrego el arco VILLA TRAFUL-SAN MARTIN DE LOS ANDES con distancia 55
@@ -221,5 +221,7 @@
 221-		✅ Se agrego el arco VILLA REGINA-ROCA con distancia 44
 222-		✅ Se agrego el arco CIPOLLETTI-NEUQUEN con distancia 6
 223-		👍👍👍CARGA INICIAL DE DATOS COMPLETADA
-224-		✅ Estacion CHINA MUERTA eliminada de las estaciones
-225-		✅ Estacion CHINA MUERTA eliminada del mapa
+224-		✅ Se agrego el tren Interno_99: DIESEL, 2, 2, LIBRE
+225-		✅ Estacion JUJUY agregada a las estaciones
+226-		✅ Estacion JUJUY agregada al mapa
+227-		✅ Se agrego la estacion JUJUY a la linea LIBRE

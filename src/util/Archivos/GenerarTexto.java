@@ -43,6 +43,7 @@ class GenerarTexto {
                 String combustibles[] = { "DIESEL", "ELECTRICIDAD", "NAFTA", "GNC" };
                 for (i = 0; i < 40; i++) {
                         System.out.println("T;"
+                                        + i + ";"
                                         + combustibles[new Random().nextInt(combustibles.length)]
                                         + ";"
                                         + Math.round(new Random().nextFloat(0, 5)) + ";"

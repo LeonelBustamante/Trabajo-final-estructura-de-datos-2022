@@ -8,13 +8,13 @@ public class Tren {
     private final int id;
     private int cantidadVagonesPasajeros, cantidadVagonesCarga;
 
-    public Tren(String combustible, int cantidadVagonesPasajeros, int cantidadVagonesCarga, Linea lineaAsignada) {
-        this.id = creaID;
+    public Tren(int id, String combustible, int cantidadVagonesPasajeros, int cantidadVagonesCarga,
+            Linea lineaAsignada) {
+        this.id = id;
         this.combustible = combustible;
         this.cantidadVagonesPasajeros = cantidadVagonesPasajeros;
         this.cantidadVagonesCarga = cantidadVagonesCarga;
         this.linea = lineaAsignada;
-        creaID++;
     }
 
     public static int ultimoID() {

@@ -105,7 +105,7 @@ public class MapeoAMuchos {
     }
 
     public Lista obtenerValores(Object dom) {
-        Lista resultado = null;
+        Lista resultado = new Lista();
         int pos;
         boolean exito = false;
         NodoHashMapeoM nodo;
@@ -221,12 +221,13 @@ public class MapeoAMuchos {
             texto = "";
             for (int i = 0; i < this.TAMANIO; i++) {
                 if (this.tabla[i] != null) {
-                    texto += "HASH POS " + i + " : " + this.tabla[i].getDominio() + "\n" + this.tabla[i].getRango();
+                    texto += "HASH POS " + i + " : " + this.tabla[i].getDominio() + "\n" + this.tabla[i].getRango()
+                            + "\n";
                     int j = 1;
                     NodoHashMapeoM aux = this.tabla[i];
                     while (aux.getEnlace() != null) {
                         aux = aux.getEnlace();
-                        texto += "HASH POS " + i + "-" + j + " : " + aux.getDominio() + "\n" + aux.getRango();
+                        texto += "HASH POS " + i + "-" + j + " : " + aux.getDominio() + "\n" + aux.getRango() + "\n";
                         j++;
                     }
                 }

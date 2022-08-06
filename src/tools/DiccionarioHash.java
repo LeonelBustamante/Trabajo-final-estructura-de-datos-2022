@@ -176,11 +176,11 @@ public class DiccionarioHash {
             for (int i = 0; i < this.TAMANIO; i++) {
                 aux = this.tabla[i];
                 if (this.tabla[i] != null) {
-                    texto += "\nPOS " + i + ":\t\t" + aux.getClave() + " - " + aux.getDato();
+                    texto += "\nPOS " + i + ":\t\t" + aux.getClave() + " - " + aux.getDato() + "\n";
                     int j = 1;
                     NodoHashDicc aux2 = aux.getEnlace();
                     while (aux2 != null) {
-                        texto += "\nPOS " + i + "-" + j + ":\t" + aux2.getClave() + " - " + aux2.getDato();
+                        texto += "\nPOS " + i + "-" + j + ":\t" + aux2.getClave() + " - " + aux2.getDato() + "\n";
                         aux2 = aux2.getEnlace();
                         j++;
                     }

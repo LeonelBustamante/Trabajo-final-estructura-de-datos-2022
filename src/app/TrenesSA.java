@@ -120,6 +120,18 @@ public class TrenesSA {
         return vagonesCarga;
     }
 
+    private static int pedirId() {
+        int id = 0;
+        do {
+            System.out.print("Ingrese el interno: ");
+            id = TecladoIn.readLineInt();
+            if (id < 0) {
+                System.out.println("!!!ERROR: El id debe ser mayor o igual a 0");
+            }
+        } while (id < 0);
+        return id;
+    }
+
     private static int pedirVagonesPasajeros() {
         int vagonesPasajeros = 0;
         do {
@@ -183,11 +195,17 @@ public class TrenesSA {
     }
 
     private static void agregarTren(DiccionarioHash trenes, MapeoAMuchos lineas) {
-        Tren tren = new Tren(pedirCombustible(), pedirVagonesCarga(), pedirVagonesPasajeros(), pedirLinea(lineas));
-        if (trenes.insertar(Tren.ultimoID(), tren)) {
-            Archivos.escribirLog("✅ Se agrego el tren " + tren);
+        int id = pedirId();
+        if (!trenes.existeClave(id)) {
+            Tren tren = new Tren(id, pedirCombustible(), pedirVagonesCarga(), pedirVagonesPasajeros(),
+                    pedirLinea(lineas));
+            if (trenes.insertar(id, tren)) {
+                Archivos.escribirLog("✅ Se agrego el tren " + tren);
+            } else {
+                Archivos.escribirLog("⛔️ No se pudo agregar el tren");
+            }
         } else {
-            Archivos.escribirLog("⛔️ No se pudo agregar el tren");
+            System.out.println("!!!ERROR: El tren ya existe");
         }
     }
 
